@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="contact-styles.css">
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="ccf699d2-0ca2-4467-9849-d36dc60cdb0c">
+
+    <p> Have any comments, questions, or even hate mail? Direct your messages here, thanks.</p> 
+     <p>- Madison</p>
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <div class="text-fields">
+    <input placeholder = "Your name:"type="text" name="name" required>
+    <input placeholder="Your email: "="email" name="email" required>
+    <textarea name="message" placeholder="Your message:" required></textarea>
+    </div>
+
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="index.html"> -->
+
+    <button type="submit">Submit Form</button>
+    <button type="button" class="close-button" onclick="window.location.href='index.html';">Go Back</button>
+
+    <style>
+        .text-fields {
+            display: flex;
+            align-items: flex-start;
+            
+
+        }
+
+    </style>
+
+    
+
+
+</form>

@@ -1,0 +1,352 @@
+
+/* Allows for anchors to scroll better*/
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* Fade-up and fade-down animations*/
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+
+}
+
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(0.1);
+  }
+
+}
+
+
+
+
+
+/* Navbar Styling - START*/
+
+.intro-grid {
+  animation: fade-up 1.2s;
+
+}
+
+.first-buttons {
+  animation: fade-up 0.8s;
+}
+
+ .w3-bar .w3-bar-item {
+    background: transparent !important; 
+    border: none !important;          
+    padding: 10px 15px;              
+    color: darkslategrey !important;            
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for navbar links */
+  .w3-bar .w3-bar-item:hover {
+    background: lightgrey;
+    color: #333 !important;              
+    border-radius: 5px;                  
+  }
+  
+  /* Optional: Style for mobile menu toggle button */
+  .w3-bar .w3-hide-medium,
+  .w3-bar .w3-hide-large {
+    background: transparent !important;
+  }
+
+
+/* Header Styling - START*/
+.header {
+    padding-top: 150px;
+    padding-bottom: 10%;
+    text-align: center;
+    line-height: 1.5;
+    font-family:"Poppins", sans-serif;
+    color: #333;
+    margin: 0 auto;
+}
+
+.header {
+    size: 100%;
+}
+
+.my-name {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #333;
+}
+
+.subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    color: #333;
+    
+}
+
+.comment {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    padding-bottom: 2%;
+
+}
+
+.button {
+    background-color: #D86F45; /* Muted Coral */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #B24E40; 
+    transform: scale(1.05); 
+}
+
+.about-container {
+  background: #fdf7f3; 
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+  display: flex;
+  gap: 50px; /* Adds space between text and image */
+ 
+    
+    
+}
+
+.about-text {
+  flex: 1; /* Allows text to take remaining space */
+  max-width: 600px; /* Prevents overly long lines */
+  text-align: left; /* Keeps it aligned properly */
+  line-height: 1.6; /* Improves readability */
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+.text-content {
+  flex: 2; /* Allows text to take up available space */
+}
+
+.profile-pic {
+  width: 400px; 
+  height: 400px;
+  /* object-fit: cover; */
+ 
+  
+  border-radius: 50%;
+  /* float: right; */
+  padding-top: 8%;
+  max-width: 70%;
+  height: auto; 
+  transition: 0.5 ease;
+}
+
+
+
+
+
+
+.profile-pic:hover {
+    box-shadow: 5p;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+
+    
+    
+}
+
+
+
+.skills-content {
+  text-align: center;
+
+}
+
+
+.square-row {
+  display: flex;
+  gap: 10px; 
+  justify-content: center; 
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: white; /* Fallback color */
+  
+  
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevents overflow of images */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animation */
+  flex-direction: column; /* Keeps everything stacked */
+}
+
+
+
+
+.square img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; /* Ensures images fully cover the square */
+  flex-direction: column; /* Stack image and text */
+}
+
+
+.square p {
+  margin-top: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.skills h3 {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+
+
+
+/* Hover Effect */
+.square:hover {
+  transform: translateY(-5px); /* Moves up slightly */
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+
+.skill-header {
+  font-family: "Raleway", sans-serif;
+
+}
+
+
+
+/* Header Styling END*/
+
+
+
+.w3-bar {
+    background: rgba(255, 0, 0, 0.8); /* Semi-transparent red */
+    backdrop-filter: blur(10px);      /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Depth effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional divider */
+  }
+  
+  .w3-bar .w3-bar-item {
+    color: white; /* Text color for readability */
+  }
+  
+  .w3-bar .w3-bar-item:hover {
+    background: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    color: black; /* Optional hover text color */
+  }
+
+  
+
+
+
+ 
+
+
+  /* Styling second-grid */
+
+  .first-grid {
+    background-color: #FAF4EE
+  }
+  .about-me h1 {
+    font-family: "Playfair Display", serif;
+    color: #100010;
+  }
+
+  .about-me h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+
+  }
+
+
+  #experience li {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #333;
+   
+  }
+
+  #experience p {
+    font-family: "Poppins", sans-serif;
+
+  }
+
+  #experience h4 {
+    font-family: "Poppins", sans-serif;
+  }
+
+  #experience h3 {
+    font-family: "Playfair Display", serif;
+    
+  }
+
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* To ensure scrolling shows translucency */
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+    background-size: cover; /* Simulate content behind the navbar */
+  }
+  
+  /* Translucent navbar background */
+.w3-bar {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    background: rgba(244, 244, 244, 0.2);
+    backdrop-filter: blur(8px);          /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+ 
+  
+  /* Body background for testing translucency */
+  body {
+    margin: 0;
+   /*  height: 500vh; /* Simulate scrollable content */
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+    background-size: cover;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient */
+    background-size: cover; /* Ensure the background covers the whole page */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+  }
+
+
+  
