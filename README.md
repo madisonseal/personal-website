@@ -19,7 +19,10 @@ This website is still a work in progress. I plan to add more content, refine the
 - **Backend**: None (yet)
 - **Hosting**: Not yet decided
 
+## Screen Captures: 
+<img width="1509" alt="Screenshot 2025-05-29 at 7 30 33 PM" src="https://github.com/user-attachments/assets/098518a3-37ae-4595-b2f0-19f8775283c6" />
 
----
+---<img width="1502" alt="Screenshot 2025-05-29 at 7 31 17 PM" src="https://github.com/user-attachments/assets/1e185082-cddd-461e-917f-81a864a73727" />
+
 
 Thanks for checking out my personal website. Stay tuned for updates!
